@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+ <v key="core" type="string" >1.2507</v>
+ <v key="editor" type="string" >1.455</v>
+ <v key="flowcharts" type="string" >1.766</v>
+ <v key="human" type="string" >1.68</v>
+ <v key="ict_kits" type="string" >1.17</v>
+ <v key="presentation" type="string" >1.570</v>
+ <v key="title" type="string" >Tim so lon nhat trong 3 so.cxi</v>
+ <v key="version" type="int" >1</v>
+ <v key="wiki" type="string" >1.2</v>
+ <commands/>
+ <definitions/>
+ <model>
+  <p key="paused" type="bool" >false</p>
+  <p key="time" type="double" >
+   <display decimal-places="-1" unit="second" never-autorange="false" modify-value-on-unit-change="true" >
+    <v type="string-array" >
+     <v type="string" >microsecond</v>
+     <v type="string" >millisecond</v>
+     <v type="string" >second</v>
+     <v type="string" >minute</v>
+     <v type="string" >hour</v>
+    </v>
+   </display>
+   <v>8.809499999997e+02</v>
+  </p>
+  <p key="time-step" type="double" >
+   <validator label="double-validator" >
+    <v type="value-map" >
+     <v key="max" type="double" >1.000000000000e+00</v>
+     <v key="min" type="double" >1.000000000000e-30</v>
+    </v>
+   </validator>
+   <display decimal-places="-1" unit="millisecond" never-autorange="true" modify-value-on-unit-change="false" >
+    <v type="string-array" >
+     <v type="string" >microsecond</v>
+     <v type="string" >millisecond</v>
+     <v type="string" >second</v>
+     <v type="string" >minute</v>
+     <v type="string" >hour</v>
+    </v>
+   </display>
+   <v>5.000000000000e-02</v>
+  </p>
+  <p key="time-step-multiplier" type="double" >
+   <validator label="double-validator" >
+    <v type="value-map" >
+     <v key="max" type="double" >1.000000000000e+01</v>
+     <v key="min" type="double" >1.000000000000e-01</v>
+    </v>
+   </validator>
+   <v>1.000000000000e+00</v>
+  </p>
+  <p key="max-time-step" type="double" >
+   <validator label="double-validator" >
+    <v type="value-map" >
+     <v key="max" type="double" >1.000000000000e+00</v>
+     <v key="min" type="double" >1.000000000000e-05</v>
+    </v>
+   </validator>
+   <display decimal-places="-1" unit="millisecond" never-autorange="true" modify-value-on-unit-change="false" >
+    <v type="string-array" >
+     <v type="string" >microsecond</v>
+     <v type="string" >millisecond</v>
+     <v type="string" >second</v>
+     <v type="string" >minute</v>
+     <v type="string" >hour</v>
+    </v>
+   </display>
+   <v>5.000000000000e-02</v>
+  </p>
+  <p key="selected-scene" type="int" >0</p>
+  <scene class="core/default-scene" id="Scene 1" >
+   <p key="width" />
+   <p key="height" />
+   <p key="background-image" >
+    <validator label="resource-validator" >
+     <v type="value-array" >
+      <v type="value-map" >
+       <v key="label" type="string" >None</v>
+       <v key="rez" type="resource" />
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Alley</v>
+       <v key="rez" type="resource" >product/backgrounds/Alley</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Car Park</v>
+       <v key="rez" type="resource" >product/backgrounds/car_park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Greenhouse</v>
+       <v key="rez" type="resource" >product/backgrounds/greenhouse</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Inside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_inside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Outside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_outside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Lift</v>
+       <v key="rez" type="resource" >product/backgrounds/lift</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Maze</v>
+       <v key="rez" type="resource" >product/backgrounds/Maze</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Park</v>
+       <v key="rez" type="resource" >product/backgrounds/Park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Road Junction</v>
+       <v key="rez" type="resource" >product/backgrounds/road_junction</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Stage</v>
+       <v key="rez" type="resource" >product/backgrounds/Stage</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Studio</v>
+       <v key="rez" type="resource" >product/backgrounds/Studio</v>
+      </v>
+     </v>
+    </validator>
+   </p>
+   <p key="scroll-offset" >(1.000000000000e+00,5.799549549550e-01)</p>
+   <p key="id" type="string" >
+    <validator label="string-validator" >
+     <v type="string" >^\S(.{0,28})(?=\S?$)</v>
+    </validator>
+   </p>
+   <part class="presentation/text" id="Text1" >
+    <p key="pos" >(4.000000000000e+02,8.080000000000e+02)</p>
+    <p key="size" >(1.562952520790e+02,3.148206377799e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="border-width" />
+    <p key="border-style" />
+    <p flags="user-hidden,readonly" key="bold" />
+    <p flags="user-hidden,readonly" key="italic" />
+    <p flags="readonly" key="underline" />
+    <p key="valign" />
+    <p key="font-size" />
+    <p key="font-name" />
+    <p key="margin" />
+    <p flags="user-hidden,readonly" key="show-character-map" />
+    <p key="text" ><![CDATA[<html><head><meta name="qrichtext" content="1" /></head><body>
+<p>Begin</p>
+<p>Input a, b, c</p>
+<p>if (a&gt;b)&amp;&amp;(a&gt;c) </p>
+<p>Display a max</p>
+<p>if (b&gt;a)&amp;&amp;(b&gt;c)</p>
+<p>Display b max</p>
+<p>if(c&gt;a)&amp;&amp;(c&gt;b)</p>
+<p>Display c max</p>
+<p>End</p>
+<p></p>
+<p></p>
+<p></p>
+</body></html>
+]]></p>
+    <p key="unformatted-text" ><![CDATA[Begin
+Input a, b, c
+if (a>b)&&(a>c) 
+Display a max
+if (b>a)&&(b>c)
+Display b max
+if(c>a)&&(c>b)
+Display c max
+End]]></p>
+    <action class="presentation/action/text/toggle-readonly" id="tmp405" >
+     <p key="name" >Disable editing</p>
+    </action>
+   </part>
+   <part class="flowcharts/start" id="Start1" >
+    <p key="pos" >(6.560000000000e+02,6.080000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="flowchart-name" >Tìm max </p>
+    <pad class="flowcharts/pad" pid="19" role="output" id="flowcharts_pad1" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <part class="flowcharts/readprop" id="GetProperty1" >
+    <p key="pos" >(6.560000000000e+02,6.560000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox1']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox1']/p[@key='value']</p>
+    <p key="variable" >a</p>
+    <pad class="flowcharts/pad" pid="20" role="input" id="flowcharts_pad2" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="21" role="output" id="flowcharts_pad3" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Start1']/pad[@pid='19']" class="flowcharts/link" start-pad="../part[@id='GetProperty1']/pad[@pid='20']" id="Link1" >
+    <p key="pos" >(6.560000000000e+02,6.320000000000e+02)</p>
+    <p key="path" >(0,0),(0,0)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/readprop" id="GetProperty2" >
+    <p key="pos" >(6.560000000000e+02,7.040000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox2']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox2']/p[@key='value']</p>
+    <p key="variable" >b</p>
+    <pad class="flowcharts/pad" pid="22" role="input" id="flowcharts_pad4" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="23" role="output" id="flowcharts_pad5" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='GetProperty1']/pad[@pid='21']" class="flowcharts/link" start-pad="../part[@id='GetProperty2']/pad[@pid='22']" id="Link2" >
+    <p key="pos" >(6.560000000000e+02,6.800000000000e+02)</p>
+    <p key="path" >(0,0),(0,0)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/readprop" id="GetProperty3" >
+    <p key="pos" >(6.560000000000e+02,7.520000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox3']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox3']/p[@key='value']</p>
+    <p key="variable" >c</p>
+    <pad class="flowcharts/pad" pid="24" role="input" id="flowcharts_pad6" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="25" role="output" id="flowcharts_pad7" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='GetProperty2']/pad[@pid='23']" class="flowcharts/link" start-pad="../part[@id='GetProperty3']/pad[@pid='24']" id="Link3" >
+    <p key="pos" >(6.560000000000e+02,7.280000000000e+02)</p>
+    <p key="path" >(0,0),(0,0)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="presentation/editbox" id="Editbox1" >
+    <p key="pos" >(7.680000000000e+02,6.400000000000e+02)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox1']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >Nhập a</p>
+   </part>
+   <part class="presentation/editbox" id="Editbox2" >
+    <p key="pos" >(7.680000000000e+02,6.880000000000e+02)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox2']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >Nhập b</p>
+   </part>
+   <part class="presentation/editbox" id="Editbox3" >
+    <p key="pos" >(7.680000000000e+02,7.360000000000e+02)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox3']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >Nhập c</p>
+   </part>
+   <part class="flowcharts/test" id="Test1" >
+    <p key="pos" >(6.560000000000e+02,8.160000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="comparator" ><![CDATA[>]]></p>
+    <p key="label" ><![CDATA[&gt;]]></p>
+    <p key="value" >b</p>
+    <p key="variable" >a</p>
+    <pad class="flowcharts/pad" pid="29" role="input" id="flowcharts_pad8" >
+     <p key="pos" >(0.000000000000e+00,-4.000000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="30" role="one,output" id="flowcharts_pad9" >
+     <p key="pos" >(9.600000000000e+01,0.000000000000e+00)</p>
+     <p key="direction" >1</p>
+     <p key="pad-length" >6.000000000000e+00</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="outputDir" >right</p>
+     <p key="output-role" >no</p>
+     <p key="pad-button-pressed" />
+    </pad>
+    <pad class="flowcharts/pad" pid="31" role="output,two" id="flowcharts_pad10" >
+     <p key="pos" >(0.000000000000e+00,4.000000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="output-role" >yes</p>
+     <p key="pad-button-pressed" />
+    </pad>
+   </part>
+   <link end-pad="../part[@id='GetProperty3']/pad[@pid='25']" class="flowcharts/link" start-pad="../part[@id='Test1']/pad[@pid='29']" id="Link4" >
+    <p key="pos" >(6.560000000000e+02,7.760000000000e+02)</p>
+    <p key="path" >(0,0),(0,0)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/test" id="Test2" >
+    <p key="pos" >(6.560000000000e+02,9.040000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="comparator" ><![CDATA[>]]></p>
+    <p key="label" ><![CDATA[&gt;]]></p>
+    <p key="value" >c</p>
+    <p key="variable" >a</p>
+    <pad class="flowcharts/pad" pid="32" role="input" id="flowcharts_pad11" >
+     <p key="pos" >(0.000000000000e+00,-4.000000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="33" role="one,output" id="flowcharts_pad12" >
+     <p key="pos" >(9.600000000000e+01,0.000000000000e+00)</p>
+     <p key="direction" >1</p>
+     <p key="pad-length" >6.000000000000e+00</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="outputDir" >right</p>
+     <p key="output-role" >no</p>
+     <p key="pad-button-pressed" />
+    </pad>
+    <pad class="flowcharts/pad" pid="34" role="output,two" id="flowcharts_pad13" >
+     <p key="pos" >(0.000000000000e+00,4.000000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="output-role" >yes</p>
+     <p key="pad-button-pressed" />
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Test2']/pad[@pid='32']" class="flowcharts/link" start-pad="../part[@id='Test1']/pad[@pid='31']" id="Link5" >
+    <p key="pos" >(6.560000000000e+02,8.560000000000e+02)</p>
+    <p key="path" >(0,0),(0,8)</p>
+    <p key="path-length" >8.000000000000e+00</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/test" id="Test4" >
+    <p key="pos" >(9.680000000000e+02,8.560000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="comparator" ><![CDATA[>]]></p>
+    <p key="label" ><![CDATA[&gt;]]></p>
+    <p key="value" >c</p>
+    <p key="variable" >b</p>
+    <pad class="flowcharts/pad" pid="35" role="input" id="flowcharts_pad17" >
+     <p key="pos" >(0.000000000000e+00,-4.000000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="36" role="one,output" id="flowcharts_pad18" >
+     <p key="pos" >(9.600000000000e+01,0.000000000000e+00)</p>
+     <p key="direction" >1</p>
+     <p key="pad-length" >6.000000000000e+00</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="outputDir" >right</p>
+     <p key="output-role" >no</p>
+     <p key="pad-button-pressed" />
+    </pad>
+    <pad class="flowcharts/pad" pid="37" role="output,two" id="flowcharts_pad19" >
+     <p key="pos" >(0.000000000000e+00,4.000000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+     <p key="output-role" >yes</p>
+     <p key="pad-button-pressed" />
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Test4']/pad[@pid='35']" class="flowcharts/link" start-pad="../part[@id='Test1']/pad[@pid='30']" id="Link8" >
+    <p key="pos" >(7.520000000000e+02,8.160000000000e+02)</p>
+    <p key="path" >(0,0),(216,0)</p>
+    <p key="path-length" >2.160000000000e+02</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/setprop" id="SetProperty1" >
+    <p key="pos" >(6.560000000000e+02,1.016000000000e+03)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox4']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox4']/p[@key='value']</p>
+    <p key="value" >a</p>
+    <pad class="flowcharts/pad" pid="38" role="input" id="flowcharts_pad20" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="39" role="output" id="flowcharts_pad21" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='SetProperty1']/pad[@pid='38']" class="flowcharts/link" start-pad="../part[@id='Test2']/pad[@pid='34']" id="Link9" >
+    <p key="pos" >(6.560000000000e+02,9.440000000000e+02)</p>
+    <p key="path" >(0,0),(0,48)</p>
+    <p key="path-length" >4.800000000000e+01</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/setprop" id="SetProperty2" >
+    <p key="pos" >(7.760000000000e+02,9.680000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox5']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox5']/p[@key='value']</p>
+    <p key="value" >c</p>
+    <pad class="flowcharts/pad" pid="40" role="input" id="flowcharts_pad22" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="41" role="output" id="flowcharts_pad23" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='SetProperty2']/pad[@pid='40']" class="flowcharts/link" start-pad="../part[@id='Test2']/pad[@pid='33']" id="Link10" >
+    <p key="pos" >(7.520000000000e+02,9.040000000000e+02)</p>
+    <p key="path" >(0,0),(24,0),(24,40)</p>
+    <p key="path-length" >6.400000000000e+01</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/setprop" id="SetProperty3" >
+    <p key="pos" >(9.680000000000e+02,9.280000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox6']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox6']/p[@key='value']</p>
+    <p key="value" >b</p>
+    <pad class="flowcharts/pad" pid="42" role="input" id="flowcharts_pad24" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="43" role="output" id="flowcharts_pad25" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Test4']/pad[@pid='37']" class="flowcharts/link" start-pad="../part[@id='SetProperty3']/pad[@pid='42']" id="Link11" >
+    <p key="pos" >(9.680000000000e+02,9.040000000000e+02)</p>
+    <p key="path" >(0,0),(0,-8)</p>
+    <p key="path-length" >8.000000000000e+00</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/setprop" id="SetProperty4" >
+    <p key="pos" >(1.176000000000e+03,8.880000000000e+02)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="assn-chosen-node" >../../part[@id='Editbox8']</p>
+    <p key="assn-chosen-property-name" >value</p>
+    <p flags="mutable-proxy" key="assn-target" >../../part[@id='Editbox8']/p[@key='value']</p>
+    <p key="value" >c</p>
+    <pad class="flowcharts/pad" pid="44" role="input" id="flowcharts_pad26" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+    <pad class="flowcharts/pad" pid="45" role="output" id="flowcharts_pad27" >
+     <p key="pos" >(0.000000000000e+00,2.400000000000e+01)</p>
+     <p key="orientation" >1.570796326795e+00</p>
+     <p key="direction" >1</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Test4']/pad[@pid='36']" class="flowcharts/link" start-pad="../part[@id='SetProperty4']/pad[@pid='44']" id="Link12" >
+    <p key="pos" >(1.176000000000e+03,8.640000000000e+02)</p>
+    <p key="path" >(0,0),(0,-8),(-112,-8)</p>
+    <p key="path-length" >1.200000000000e+02</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="flowcharts/stop" id="Stop1" >
+    <p key="pos" >(6.560000000000e+02,1.112000000000e+03)</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" >Stop</p>
+    <pad class="flowcharts/pad" pid="46" role="input" id="flowcharts_pad28" >
+     <p key="pos" >(0.000000000000e+00,-2.400000000000e+01)</p>
+     <p key="orientation" >-1.570796326795e+00</p>
+     <p key="direction" >0</p>
+     <p key="id" type="string" >
+      <validator label="string-validator" >
+       <v type="string" >[a-zA-Z0-9_\- /]+</v>
+      </validator>
+     </p>
+    </pad>
+   </part>
+   <link end-pad="../part[@id='Stop1']/pad[@pid='46']" class="flowcharts/link" start-pad="../part[@id='SetProperty1']/pad[@pid='39']" id="Link13" >
+    <p key="pos" >(6.560000000000e+02,1.040000000000e+03)</p>
+    <p key="path" >(0,0),(0,48)</p>
+    <p key="path-length" >4.800000000000e+01</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <link end-pad="../part[@id='Stop1']/pad[@pid='46']" class="flowcharts/link" start-pad="../part[@id='SetProperty2']/pad[@pid='41']" id="Link15" >
+    <p key="pos" >(7.760000000000e+02,9.920000000000e+02)</p>
+    <p key="path" >(0,0),(0,96),(-120,96)</p>
+    <p key="path-length" >2.160000000000e+02</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <link end-pad="../part[@id='SetProperty2']/pad[@pid='41']" class="flowcharts/link" start-pad="../part[@id='SetProperty3']/pad[@pid='43']" id="Link16" >
+    <p key="pos" >(9.680000000000e+02,9.520000000000e+02)</p>
+    <p key="path" >(0,0),(0,40),(-192,40)</p>
+    <p key="path-length" >2.320000000000e+02</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <link end-pad="../part[@id='SetProperty3']/pad[@pid='43']" class="flowcharts/link" start-pad="../part[@id='SetProperty4']/pad[@pid='45']" id="Link17" >
+    <p key="pos" >(1.176000000000e+03,9.120000000000e+02)</p>
+    <p key="path" >(0,0),(0,40),(-208,40)</p>
+    <p key="path-length" >2.480000000000e+02</p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+   </link>
+   <part class="presentation/editbox" id="Editbox4" >
+    <p key="pos" >(5.120000000000e+02,1.040000000000e+03)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox4']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >a max</p>
+   </part>
+   <part class="presentation/editbox" id="Editbox5" >
+    <p key="pos" >(7.840000000000e+02,1.008000000000e+03)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox5']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >c max</p>
+   </part>
+   <part class="presentation/editbox" id="Editbox6" >
+    <p key="pos" >(9.840000000000e+02,9.680000000000e+02)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox6']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >b max</p>
+   </part>
+   <part class="presentation/editbox" id="Editbox8" >
+    <p key="pos" >(1.192000000000e+03,9.120000000000e+02)</p>
+    <p key="size" >
+     <validator label="point-validator" >
+      <v type="value-map" >
+       <v key="min" type="point" >(4.400000000000e+01,2.400000000000e+01)</v>
+      </v>
+     </validator>
+     <v>(2.440000000000e+02,2.500000000000e+01)</v>
+    </p>
+    <p key="id" type="string" >
+     <validator label="string-validator" >
+      <v type="string" >[a-zA-Z0-9_\- /]+</v>
+     </validator>
+    </p>
+    <p key="label" />
+    <p key="mode" >Nothing</p>
+    <p flags="mutable-proxy" key="value" >../../part[@id='Editbox8']/p[@key='local-value']</p>
+    <p key="text-colour" />
+    <p key="text-width" />
+    <p key="local-value" >c max</p>
+   </part>
+   <p class="flowcharts/*" key="speed" />
+   <p class="flowcharts/*" key="step-pressed" />
+   <p class="flowcharts/*" key="show-tabs" />
+  </scene>
+  <scene class="core/default-scene" id="Scene 2" >
+   <p key="width" />
+   <p key="height" />
+   <p key="background-image" >
+    <validator label="resource-validator" >
+     <v type="value-array" >
+      <v type="value-map" >
+       <v key="label" type="string" >None</v>
+       <v key="rez" type="resource" />
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Alley</v>
+       <v key="rez" type="resource" >product/backgrounds/Alley</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Car Park</v>
+       <v key="rez" type="resource" >product/backgrounds/car_park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Greenhouse</v>
+       <v key="rez" type="resource" >product/backgrounds/greenhouse</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Inside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_inside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Outside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_outside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Lift</v>
+       <v key="rez" type="resource" >product/backgrounds/lift</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Maze</v>
+       <v key="rez" type="resource" >product/backgrounds/Maze</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Park</v>
+       <v key="rez" type="resource" >product/backgrounds/Park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Road Junction</v>
+       <v key="rez" type="resource" >product/backgrounds/road_junction</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Stage</v>
+       <v key="rez" type="resource" >product/backgrounds/Stage</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Studio</v>
+       <v key="rez" type="resource" >product/backgrounds/Studio</v>
+      </v>
+     </v>
+    </validator>
+   </p>
+   <p key="id" type="string" >
+    <validator label="string-validator" >
+     <v type="string" >^\S(.{0,28})(?=\S?$)</v>
+    </validator>
+   </p>
+  </scene>
+  <scene class="core/default-scene" id="Scene 3" >
+   <p key="width" />
+   <p key="height" />
+   <p key="background-image" >
+    <validator label="resource-validator" >
+     <v type="value-array" >
+      <v type="value-map" >
+       <v key="label" type="string" >None</v>
+       <v key="rez" type="resource" />
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Alley</v>
+       <v key="rez" type="resource" >product/backgrounds/Alley</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Car Park</v>
+       <v key="rez" type="resource" >product/backgrounds/car_park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Greenhouse</v>
+       <v key="rez" type="resource" >product/backgrounds/greenhouse</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Inside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_inside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >House (Outside)</v>
+       <v key="rez" type="resource" >product/backgrounds/house_outside</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Lift</v>
+       <v key="rez" type="resource" >product/backgrounds/lift</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Maze</v>
+       <v key="rez" type="resource" >product/backgrounds/Maze</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Park</v>
+       <v key="rez" type="resource" >product/backgrounds/Park</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Road Junction</v>
+       <v key="rez" type="resource" >product/backgrounds/road_junction</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Stage</v>
+       <v key="rez" type="resource" >product/backgrounds/Stage</v>
+      </v>
+      <v type="value-map" >
+       <v key="label" type="string" >Studio</v>
+       <v key="rez" type="resource" >product/backgrounds/Studio</v>
+      </v>
+     </v>
+    </validator>
+   </p>
+   <p key="id" type="string" >
+    <validator label="string-validator" >
+     <v type="string" >^\S(.{0,28})(?=\S?$)</v>
+    </validator>
+   </p>
+  </scene>
+ </model>
+</document>
